@@ -1,12 +1,27 @@
-var input = document.querySelector("#numero");
+// Selecionando elementos
+const input = document.querySelector("#numero");
 const btn = document.querySelector("#btn");
-const tabuada = document.querySelector(".tabuada");
+const divTabuada = document.querySelector(".tabuada");
 
+// Funções
 function mostraTabuada() {
+  divTabuada.innerHTML = "";
   let numero = input.value;
-  for (let multiplicador = 0; (multiplicador = 9); multiplicador++) {
-    console.log(`${numero} x ${multiplicador} = ${numero * multiplicador}`);
+  for (multiplicador = 1; multiplicador < 11; multiplicador++) {
+    let resultado = `${numero} x ${multiplicador} = ${numero * multiplicador}`;
+    console.log(resultado);
+
+    let p = document.createElement("p");
+    p.textContent = resultado;
+    divTabuada.appendChild(p);
   }
 }
+
+input.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    mostraTabuada();
+  }
+});
 
 btn.addEventListener("click", mostraTabuada);
