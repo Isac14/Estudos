@@ -1,0 +1,48 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  text-align: center;
+}
+
+form {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+#enviar {
+  margin-bottom: 10px;
+}
+
+.calendar th,
+td {
+  border: solid 1px black;
+  width: 40px;
+  height: 30px;
+}
+
+.calendar {
+  text-align: center;
+}
+
+#intervalo {
+  background-color: salmon;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}

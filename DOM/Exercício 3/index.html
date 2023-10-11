@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 3</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="enunciado">
+        <h2>Exercício 3</h2>
+        <p>
+          a. colete do usuário duas datas (usando inputs de data) e altere a cor
+          do “quadrado” dessa data no calendário dinamicamente. Por exemplo, se
+          o usuário escolher a data 01/10/2022 – o quadrado da com o dia 1
+          (quarta-feira) deve mudar de cor.
+        </p>
+        <p>
+          b. colete do usuário duas datas (usando inputs de data), a seguir
+          faça:
+          <br />
+          1- calcule quantos dias existem entre elas e exiba na tela (por
+          exemplo, entre 05/04/2022 – 10/04/2022 → 5 dias);
+          <br />
+          2- mude a cor dos dias entre as datas selecionadas para a cor azul e
+          as datas selecionadas para a cor laranja.
+        </p>
+      </div>
+
+      <form>
+        <label>Data Inicial:</label>
+        <input id="data1" type="date" />
+        <label>Data Final:</label>
+        <input id="data2" type="date" />
+      </form>
+      <input id="enviar" type="submit" />
+
+      <table class="calendar">
+        <thead>
+          <tr>
+            <th>Dom</th>
+            <th>Seg</th>
+            <th>Ter</th>
+            <th>Qua</th>
+            <th>Qui</th>
+            <th>Sex</th>
+            <th>Sab</th>
+            <th>Dom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td value="73">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+
+      <div id="intervalo"></div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
