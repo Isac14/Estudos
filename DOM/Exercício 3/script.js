@@ -39,17 +39,15 @@ function dataFinal() {
 }
 
 function intervalo() {
-  for (let x = diaInicialInt + 3; x < diaFinalInt + 2; x++) {
-    diasCalendario[x].style.backgroundColor = "orange";
-    diasCalendario[x].style.fontWeight = "bold";
-  }
+  if (diaInicialInt <= diaFinalInt) {
+    for (let x = diaInicialInt + 3; x < diaFinalInt + 2; x++) {
+      diasCalendario[x].style.backgroundColor = "orange";
+      diasCalendario[x].style.fontWeight = "bold";
+    }
 
-  let intervalo = diaFinalInt - diaInicialInt;
-  divIntervalo.innerText = `Intervalo: ${intervalo} dias`;
+    let intervalo = diaFinalInt - diaInicialInt;
+    divIntervalo.innerText = `Intervalo: ${intervalo} dias`;
+  } else {
+    divIntervalo.innerHTML = `A data inicial não pode ser maior do que a data final. <br> Tente novamente.`;
+  }
 }
-
-enviar.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-  }
-});
