@@ -1,3 +1,9 @@
-# Exercícios
+## Este é um repositório dedicado a:
 
-## Este é um repositório dedicado a prática de exercícios e problemas em JavaScript
+<ul>
+  <li>Registros</li>
+  <li>Prática de exercícios</li>
+  <li>Resolução de problemas</li>
+</ul>
+
+#### Linguagem: JavaScript
